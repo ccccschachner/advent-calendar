@@ -1,0 +1,186 @@
+
+
+
+.page p {
+  top:0;
+  text-align: center;
+  color:#000000;
+  font-size: 8vh;
+  
+  /*font-family: 'Mountains of Christmas', cursive;*/
+  font-family: 'Pacifico', cursive;
+  /*font-family: 'Satisfy', cursive;*/
+  margin-bottom: 10vh;
+  margin-top: -0.5vh;
+ 
+}
+
+.page {
+    background-image: url('../assets/backgrounds/background6.jpeg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position:center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+
+    width: 100vw;     
+    height: 100vh;     
+    display: flex;
+    margin:1px;
+    flex-direction: column; /* Aligns items in rows (horizontal direction) */
+  
+    opacity: 0.9;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: -1.5vh;
+    margin-bottom: -0.7603005vh;
+
+    overflow: hidden; /* Disables scrolling */
+    z-index: 1;
+
+}
+
+.page .calendar {
+  margin-top: -12vh;
+  margin-bottom: 5vh;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 65vw;     
+  height: 80vh;
+}
+
+.closed {
+  position: relative;
+  background-image: url('../assets/backgrounds/giftbox_colored_inverted.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  color:#fff4d2;
+  font-size: 13px;
+  font-family: 'Satisfy', cursive;
+  font-style: bold;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 16vh;
+  width: 16vh;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+
+}
+
+.opened .day-number{
+  margin-top: 11.5vh;
+  margin-left: 2.2vw;
+}
+
+.opened {
+  position: relative;
+  background-image: url('../assets/backgrounds/gift-box_colored.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  font-style: in;
+  color:#fff4d2;
+  font-style: bold;
+  font-size: 13px;
+  font-family: 'Satisfy', cursive;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 17vh;
+  width: 17vh;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+
+}
+
+/* Full-page modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Background overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures modal appears on top of other content */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal-content img {
+  max-width: 50vw;
+  max-height: 70vh;
+  height: auto;
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Close button styling */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.day-number{
+  margin-top: 7vh;
+}
+
+.content {
+  position:fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  z-index: 2;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.day.opened {
+  background-color: #ffffff;
+}
+
+.img{
+  height: 110px;
+  width: 220px;
+}
+ 
+
+
+.page .countdown p{
+  color:#000000;
+  font-size: 6vh;
+  /*font-family: 'Mountains of Christmas', cursive;*/
+  font-family: 'Pacifico', cursive;
+  /*font-family: 'Satisfy', cursive;*/
+  margin-bottom: 0vh;
+  margin-top: -5vh;
+}
+
+
+
+
+
