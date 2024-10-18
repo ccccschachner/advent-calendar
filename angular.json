@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/advent-calendar-app",
+             "baseHref": "/advent-calendar-app/",
             "index": "src/index.html",
             "polyfills": "src/polyfills.ts",
             "main": "src/main.ts",
