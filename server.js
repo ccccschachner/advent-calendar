@@ -11,7 +11,7 @@ app.use(cors());
 
 
 // Serve static files from the dist directory
-const distDir = path.join(__dirname); // replace <your-angular-project-name> with your actual project name
+const distDir = path.join(__dirname, 'dist', 'advent-calendar-app' ); // replace <your-angular-project-name> with your actual project name
 app.use(express.static(distDir));
 
 // Redirect all other requests to the index.html
