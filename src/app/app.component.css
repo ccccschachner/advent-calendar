@@ -35,7 +35,6 @@
     margin: -1.5vh;
     margin-bottom: -0.7603005vh;
 
-    overflow: hidden; /* Disables scrolling */
     z-index: 1;
 
 }
@@ -57,7 +56,7 @@
   background-size:cover;
   background-repeat: no-repeat;
   color:#fff4d2;
-  font-size: 13px;
+  font-size: 2vh;
   font-family: 'Satisfy', cursive;
   font-style: bold;
   display: flex; 
@@ -66,7 +65,7 @@
   height: 16vh;
   width: 16vh;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 1vh;
   transition: background-color 0.3s ease;
 
 }
@@ -84,7 +83,7 @@
   font-style: in;
   color:#fff4d2;
   font-style: bold;
-  font-size: 13px;
+  font-size: 2vh;
   font-family: 'Satisfy', cursive;
   display: flex; 
   align-items: center;
