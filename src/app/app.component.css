@@ -24,7 +24,6 @@
     width: 100vw;     
     height: 100vh;     
     display: flex;
-    margin:1px;
     flex-direction: column; /* Aligns items in rows (horizontal direction) */
   
     opacity: 0.9;
@@ -179,6 +178,76 @@
   margin-top: -5vh;
 }
 
+
+
+
+/* Adjust for small screens (e.g., iPhone SE) */
+@media (max-width: 375px) {
+  .page p {
+    font-size: 7vh; /* Decrease font size */
+  }
+  
+  .page .calendar {
+    margin-top: 1vh;
+    grid-template-columns: repeat(3, 1fr); /* Reduce columns for small screens */
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .closed, .opened {
+    height: 12vh;
+    width: 12vh; /* Adjust size of calendar boxes */
+  }
+
+  .opened .day-number{
+    font-size: 1vh;
+    margin-top: 0.25vh;
+    margin-left: 0.1vw;
+  }
+  
+  
+  .modal-content img {
+    max-width: 80vw; /* Ensure images fit within the screen */
+  }
+
+  .page .countdown p {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+/* For larger mobile devices (e.g., iPhone 6/7/8, iPhone X) */
+@media (max-width: 768px) {
+  .page p {
+    font-size: 5.5vh; /* Slightly reduce font size */
+  }
+  
+  .page .calendar {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns instead of 6 */
+    width: 70vw;
+    height: 65vh;
+  }
+
+  .closed, .opened {
+    height: 10vh;
+    width: 10vh; /* Slightly smaller boxes */
+  }
+  
+  .modal-content img {
+    max-width: 70vw; /* Responsive image in modal */
+  }
+  
+  .page .countdown p {
+    font-size: 5vh;
+  }
+}
 
 
 
