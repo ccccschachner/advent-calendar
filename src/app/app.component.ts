@@ -1,4 +1,4 @@
-import { Component, AfterViewInit  } from '@angular/core';
+import { Component  } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common'; // Import CommonModule here
 
@@ -15,6 +15,7 @@ export class AppComponent {
   days: { dayNumber: number, isOpened: boolean, content: string }[] = [];
   selectedDay: { dayNumber: number, content: string } | null = null; // To store the currently opened day
   hoursUntilChristmas: number=0;
+  title: any;
 
   constructor() {
     this.initializeDays();
